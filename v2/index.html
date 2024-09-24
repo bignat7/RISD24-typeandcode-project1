@@ -12,15 +12,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: url(/v2/images/star-cursor.png), crosshair;
  }
-
-.url {
-    cursor: url(v2/images/star-cursor.png),auto;
-}
 
  body {
     background: linear-gradient(#000000, #c29100);
-    cursor: url('v2/images/star-cursor.png'), auto;
     margin-left: 300px;
     margin-right: 300px;
  }
@@ -98,17 +94,21 @@
 
 .peach{ 
     color: #c29100;
+    text-decoration: none;
 }  
 
 
 .peach:hover {
+    text-decoration: none;
   animation: glow 1.5s ease-in-out infinite alternate
 }
 
 .gray{
     color: rgb(130, 130, 130);
+    text-decoration: none;
 }
 .gray:hover{
+    text-decoration: none;
   animation: glow 1.5s ease-in-out infinite alternate
 }
 
@@ -127,23 +127,21 @@
     font-size: 90pt;
 }
 
-
-
 .asterisk:nth-child(1) { top: 3vw; left: 50vw; }
-.asterisk:nth-child(2) { top: 5vw; left: 10vw; }
+.asterisk:nth-child(2) { top: 5vw; left: 10vw; animation: glow 1.5s ease-in-out infinite alternate}
 .asterisk:nth-child(3) { top: 7vw; left: 40vw; }
-.asterisk:nth-child(4) { top: 10vw; left: 90vw; }
+.asterisk:nth-child(4) { top: 10vw; left: 90vw; animation: glow 1.5s ease-in-out infinite alternate}
 .asterisk:nth-child(5) { top: 14vw; left: 50vw; }
 .asterisk:nth-child(6) { top: 17vw; left: 28vw; }
 .asterisk:nth-child(7) { top: 20vw; left: 68vw; }
-.asterisk:nth-child(8) { top: 22vw; left: 9vw; }
+.asterisk:nth-child(8) { top: 22vw; left: 9vw; animation: glow 1.5s ease-in-out infinite alternate}
 .asterisk:nth-child(9) { top: 26vw; left: 65vw; }
 .asterisk:nth-child(10) { top: 28vw; left: 78vw; }
 
 .asterisk:nth-child(11) { top: 32vw; left: 50vw; }
 .asterisk:nth-child(12) { top: 35vw; left: 20vw; }
 .asterisk:nth-child(13) { top: 37vw; left: 40vw; }
-.asterisk:nth-child(14) { top: 42vw; left: 90vw; }
+.asterisk:nth-child(14) { top: 42vw; left: 90vw; animation: glow 1.5s ease-in-out infinite alternate}
 .asterisk:nth-child(15) { top: 45vw; left: 50vw; }
 .asterisk:nth-child(16) { top: 46vw; left: 28vw; }
 .asterisk:nth-child(17) { top: 49vw; left: 78vw; }
@@ -165,6 +163,10 @@
 html {
   scroll-behavior: smooth;
 }
+
+section {
+			height: 100vh;
+		}
 
 table {
   border-collapse: collapse;
@@ -210,14 +212,14 @@ th, td {
     <table>
         <tr>
           <td>jump to section:</td>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-          <td>7</td>
-          <td>8</td>
+          <td><a href="#section1" class="gray">1</a></td>
+          <td><a href="#section2" class="gray">2</a></td>
+          <td><a href="#section3" class="gray">3</a></td>
+          <td><a href="#section4" class="gray">4</a></td>
+          <td><a href="#section5" class="gray">5</a></td>
+          <td><a href="#section6" class="gray">6</a></td>
+          <td><a href="#section7" class="gray">7</a></td>
+          <td><a href="#section8" class="gray">8</a></td>
         </tr>
       </table>
     <br>
@@ -261,7 +263,7 @@ th, td {
         <br>
         <br>
             <div class="bodycopy" id="section5">
-                <span class="h1">5. . . Look at a picture of “The Starry Night” by Vincent van Gogh.</span>
+                <span class="h1">5. . . Look at a picture of <em><a href= "https://en.wikipedia.org/wiki/The_Starry_Night" class="gray">The Starry Night</em></a> by Vincent van Gogh.</span>
                 <br>
                 <br>
                 With this and other works, van Gogh helped pioneer the art movement known as Post-Impressionism. You haven’t helped pioneer anything. Will anyone remember anything about you in a hundred and fifty years? Probably not. The good, the bad, the humiliating—it will all be washed away by time. Even if you cut off your ear, people probably wouldn’t care that much. That’s kind of already somebody else’s thing. So relax. Let go.
@@ -332,7 +334,7 @@ th, td {
 <br>
 <br>
 <div class="closer">
-<a href="/RISD24-typeandcode-project1/" class="gray">return home</a></span>
+<a href="/index.html" class="gray">return home</a></span>
 </div>
 <br>
 <br>
