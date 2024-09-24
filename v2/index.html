@@ -21,6 +21,8 @@
  body {
     background: linear-gradient(#000000, #c29100);
     cursor: url('v2/images/star-cursor.png'), auto;
+    margin-left: 300px;
+    margin-right: 300px;
  }
 
 @font-face {
@@ -29,22 +31,63 @@
     }
 
     .title {
+        margin-top: 80px;
+        margin-bottom: 30px;
         color: #ffffff;
 	    font-family: "Sparkling", Arial, sans-serif;
-        font-size: 40pt;
+        font-size: 37pt;
         text-align: left;
         animation: glow 1.5s ease-in-out infinite alternate;
+        text-transform: uppercase;
+        line-height: 125%;
     }
 
     .headerinfo {
-        color: #ffffff;
+        margin-top: 80px;
+        color: rgb(177, 177, 177);
         font-family: 'Courier New', Courier, monospace;
-        font-size: 12pt;
-        text-align: left;
-        padding-left: 40px;
+        font-size: 13pt;
+        text-align: right;
+        float: right;
+    }
+    
+    @font-face {
+	font-family: "Times Dot";
+	src: url("/v2/fonts/TimesDotRom.otf");
     }
 
-@-webkit-keyframes glow {
+    .opener {
+	    font-family: "Times Dot", Arial, sans-serif;
+        color: #c29100;
+        line-height: 125%;
+        font-size: 13pt;
+    }
+
+    .h1 {
+        font-family: "Times Dot", Arial, sans-serif;
+        color: #c29100;
+        line-height: 125%;
+        font-size: 30pt;
+    }
+
+    .bodycopy {
+        font-family: "Times Dot", Arial, sans-serif;
+        color: #c29100;
+        line-height: 125%;
+        font-size: 13pt;
+        padding: 20px;
+        border: 5px dotted #e4ab00;
+    }
+
+    .closer {
+        font-family: "Times Dot", Arial, sans-serif;
+        color: rgb(177, 177, 177);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 13pt;
+        text-align: right;
+    }
+
+@keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #c29100, 0 0 40px #c29100, 0 0 50px #c29100, 0 0 60px #c29100, 0 0 70px #c29100;
   }
@@ -53,16 +96,21 @@
   }
 }
 
-@font-face {
-	font-family: "Times Dot";
-	src: url("/v2/fonts/TimesDotRom.otf");
-    }
+.peach{ 
+    color: #c29100;
+}  
 
-    .bodycopy {
-        color: #ffffff;
-	    font-family: "Times Dot", Arial, sans-serif;
 
-    }
+.peach:hover {
+  animation: glow 1.5s ease-in-out infinite alternate
+}
+
+.gray{
+    color: rgb(130, 130, 130);
+}
+.gray:hover{
+  animation: glow 1.5s ease-in-out infinite alternate
+}
 
 .asterisk {
     position: fixed;
@@ -71,6 +119,7 @@
     color: #c29100;
     opacity: 0.5;
     transition: 0.1s;
+    z-index: -1;
 
 }
 
@@ -112,34 +161,138 @@
 .asterisk:nth-child(28) { top: 37vw; left: 4vw; }
 .asterisk:nth-child(29) { top: 12vw; left: 26vw; }
 .asterisk:nth-child(30) { top: 13vw; left: 64vw; }
-   
+
+html {
+  scroll-behavior: smooth;
+}
+
 table {
-  font-family: Courier New, monospace;
   border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+    font-family: "Times Dot", Arial, sans-serif;
+    color: #c29100;
+    line-height: 125%;
+    font-size: 13pt;
 }
 
 </style>
 <body>
 
-    <table style="width: 100%">
-        <tr style="height: 400px">
-          <td class="headerinfo" style="width: 25%,">
-            <strong>daily shouts</strong>
-            <br>
-            By Simon Henriques
-            <br>
-            dec 2, 2023.
-            <br>
-            <br>
-            <a href="https://www.newyorker.com/contributors/simon-henriques">Simon Henriques</a> is a writer, actor, and co-artistic director of the theatre company Nightdrive.
-            </td>
-          <th class="title" style="width: 60%; height: 200px;">
-            How to Still Be Reminded of Your Insignificance Even When Light Pollution Makes It Impossible to See the Stars
-            </th>
+    <div class="title" style="width: 60vw; height: 200px;">
+        How to Still Be Reminded of Your Insignificance Even When Light Pollution Makes It Impossible to See the Stars
+    </div>
+
+    <div class="headerinfo" style="width: 25vw; height: 200px;">
+        <strong>daily shouts</strong>
+        <br>
+        By Simon Henriques
+        <br>
+        dec 2, 2023.
+        <br>
+        <br>
+        <a href="https://www.newyorker.com/contributors/simon-henriques" class="peach">Simon Henriques</a> is a writer, actor, and co-artistic director of the theatre company Nightdrive.
+    </div>
+<br>
+<br>
+<br>
+<br>
+    <div class="opener" style="width: 28vw">
+        Throughout history, humans have gazed upward and been cowed by the sheer vastness of the universe. With all of those stars out there, we each ask ourselves: <strong>"how could I possibly matter?"</strong> Unfortunately, the amount of light pollution in most modern cities makes this sort of humbling introspection virtually impossible today. If you’re worried about becoming too self-absorbed without a star-dappled night sky to keep your ego in check, here are some alternative ways to be reminded just how little you and your problems matter.
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <table>
+        <tr>
+          <td>jump to section:</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
         </tr>
       </table>
-    
-
+    <br>
+    <div class="bodycopy" id="section1">
+        <span class="h1">1. . . Consider the vastness of the light-pollution problem.</span>
+        <br>
+        <br>
+        If you need something big to make you feel small, think about the issue of light pollution itself. It’s huge—-almost as huge as the number of stars in the night sky. And you’re so insignificant that there’s basically nothing you can do to stop it. You could keep all your lights off at night, blindly fumbling your way through your pitch-dark apartment, but the stars outside would remain just as invisible as they are now. <em>Take a deep breath. You’re just one helpless person out of billions, and that’s a beautiful thing.</em>
+        
+    </div>
+<br>
+<br>
+<br>
+    <div class="bodycopy" id="section2">
+        <span class="h1">2. . . Look at all the headlights on the street.</span>
+        <br>
+        <br>
+        Headlights are basically stars on the ground. Watch them twinkle as they go by. Each one of those cars racing past is being driven by a person with their own story—-a story with its own unknowable drama. By the same token, all those people have no reason to care about you, or even know who you are. Wow—-it really makes you think.
+        
+    </div>
+<br>
+<br>
+<br>
+    <div class="bodycopy" id="section3">
+        <span class="h1">3. . . Consider the vastness of the regular pollution problem.</span>
+        <br>
+        <br>
+        Each one of those cars is pumping out exhaust, too. Dang.
+        
+    </div>
+    <br>
+    <br>
+    <br>
+        <div class="bodycopy" id="section4">
+            <span class="h1">4. . . Look at a picture of a starry sky.</span>
+            <br>
+            <br>
+            A photo of the night sky taken in the middle of nowhere can be a bracing reminder of what the night sky where you live could look like—-and probably used to, before industrialization and urbanization took their toll. Really let yourself experience how foreign it feels. Then, let that sense of foreignness fuel a deeper, fuller understanding of just how many places there are in the world, each with their own unique view of the cosmos. Places you’ve never heard of, places you’ll never go. Whole towns and counties and countries carrying on, unaware of and unaffected by whatever seems so important to you right now. Pretend you live there.
+        </div>
+        <br>
+        <br>
+        <br>
+            <div class="bodycopy" id="section5">
+                <span class="h1">5. . . Look at a picture of “The Starry Night” by Vincent van Gogh.</span>
+                <br>
+                <br>
+                With this and other works, van Gogh helped pioneer the art movement known as Post-Impressionism. You haven’t helped pioneer anything. Will anyone remember anything about you in a hundred and fifty years? Probably not. The good, the bad, the humiliating—it will all be washed away by time. Even if you cut off your ear, people probably wouldn’t care that much. That’s kind of already somebody else’s thing. So relax. Let go.
+            </div>
+            <br>
+            <br>
+            <br>
+                <div class="bodycopy" id="section6">
+                    <span class="h1">6. . . Instead of looking up at the stars, look up stars’ net worth.</span>
+                    <br>
+                    <br>
+                    Leonardo DiCaprio gets paid thirty million dollars per movie, according to the top result from your Google search just now. If your salary is a numerical representation of your worth, that means he’s thousands of times more important than you. You’re nothing. Feel a weight lift off you as you remember that the work you do doesn’t matter to anybody except your immediate supervisor. Most of your closest friends could only describe your job in the vaguest terms. That sure puts things into perspective, doesn’t it?
+                </div>
+                <br>
+            <br>
+            <br>
+                <div class="bodycopy" id="section7">
+                    <span class="h1">7. . . Consider how you thoroughly fail to understand how the Internet works.</span>
+                    <br>
+                    <br>
+                    O.K., wait. So to get that information about DiCaprio, you typed something into your computer, and then that got sent to your modem, which travelled down a wire and then went to . . . a satellite somewhere? Which beamed something back to a different computer somewhere else? Hmm. That doesn’t feel quite right. Well, however it works, the people who figured it out irrevocably altered how we communicate with one another and experience the world. Data are flying through the air all around you (?) and you’re blind to them. At any given moment, so much is happening in the World Wide Web that you don’t perceive, let alone understand. It all moves faster than you can blink, and none of it depends on you at all. It maybe depends on tubes?
+                </div>
+                <br>
+            <br>
+            <br>
+                <div class="bodycopy" id="section8">
+                    <span class="h1">8. . . Ask yourself why you’re trying so hard to feel insignificant in the first place.</span>
+                    <br>
+                    <br>
+                    In our data-driven, capitalist society, you basically only exist in aggregate form. As far as a good chunk of the world is concerned, you’re no more than a faceless combination of demographics whose primary purpose is to be advertised to. We’re all just cogs in a giant machine that even the richest and most powerful barely understand the true impact of. So if you’ve found something that feels like it matters—-that gives your life a sense of meaning—-why would you want to get rid of that? A steady stream of overstimulation has insured that we’re numb to just about everything we encounter, so the fact that you’re able to feel anything with any degree of intensity is a small miracle. Look up at the blank night sky. Indulge yourself. Revel in this feeling of importance, for the brief moment it’s here. It’ll probably pass by morning.
+                </div>
 
     <div>
         <div class="asterisk">*</div>
@@ -175,8 +328,14 @@ table {
         <div class="asterisk">*</div>
         <div class="asterisk">*</div>
     </div>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+<br>
+<br>
+<br>
+<div class="closer">
+<a href="/RISD24-typeandcode-project1/" class="gray">return home</a></span>
+</div>
+<br>
+<br>
+<br>
 </body>
 </html>
