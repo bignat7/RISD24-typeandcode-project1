@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +9,29 @@
 </head>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    cursor: url(/v2/images/star-cursor.png), crosshair;
- }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        cursor: url(/v2/images/star-cursor.png), crosshair;
+    }
 
- body {
-    background: linear-gradient(#000000, #c29100);
-    margin-left: 300px;
-    margin-right: 300px;
- }
+    body {
+        background: linear-gradient(#000000, #c29100);
+        margin-left: 300px;
+        margin-right: 300px;
+    }
 
-@font-face {
-	font-family: "Sparkling";
-	src: url("v2/fonts/Sparkling-D0Rd.ttf");
+    @font-face {
+        font-family: "Sparkling";
+        src: url("fonts/Sparkling-D0Rd.ttf");
     }
 
     .title {
         margin-top: 80px;
         margin-bottom: 30px;
         color: #ffffff;
-	    font-family: "Sparkling", Arial, sans-serif;
+        font-family: "Sparkling", Arial, sans-serif;
         font-size: 37pt;
         text-align: left;
         animation: glow 1.5s ease-in-out infinite alternate;
@@ -46,14 +47,14 @@
         text-align: right;
         float: right;
     }
-    
+
     @font-face {
-	font-family: "Times Dot";
-	src: url("fonts/TimesDotRom.otf");
+        font-family: "Times Dot";
+        src: url("fonts/TimesDotRom.otf");
     }
 
     .opener {
-	    font-family: "Times Dot", Arial, sans-serif;
+        font-family: "Times Dot", Arial, sans-serif;
         color: #c29100;
         line-height: 125%;
         font-size: 13pt;
@@ -83,105 +84,229 @@
         text-align: right;
     }
 
-@keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 30px #c29100;
-  }
-  to {
-    text-shadow: 0 0 10px #fff, 0 0 30px #000000;
-  }
-}
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 30px #c29100;
+        }
 
-.peach{ 
-    color: #c29100;
-    text-decoration: none;
-}  
+        to {
+            text-shadow: 0 0 10px #fff, 0 0 30px #000000;
+        }
+    }
+
+    .peach {
+        color: #c29100;
+        text-decoration: none;
+    }
 
 
-.peach:hover {
-    text-decoration: none;
-  animation: glow 1.5s ease-in-out infinite alternate
-}
+    .peach:hover {
+        text-decoration: none;
+        animation: glow 1.5s ease-in-out infinite alternate
+    }
 
-.gray{
-    color: rgb(130, 130, 130);
-    text-decoration: none;
-}
-.gray:hover{
-    text-decoration: none;
-  animation: glow 1.5s ease-in-out infinite alternate
-}
+    .gray {
+        color: rgb(130, 130, 130);
+        text-decoration: none;
+    }
 
-.asterisk {
-    position: fixed;
-    font-family: Arial, sans-serif;
-    font-size: 60pt;
-    color: #c29100;
-    opacity: 0.5;
-    transition: 0.1s;
-    z-index: -1;
+    .gray:hover {
+        text-decoration: none;
+        animation: glow 1.5s ease-in-out infinite alternate
+    }
 
-}
+    .asterisk {
+        position: fixed;
+        font-family: Arial, sans-serif;
+        font-size: 60pt;
+        color: #c29100;
+        opacity: 0.5;
+        transition: 0.1s;
+        z-index: -1;
 
-.asterisk:hover {
-    font-size: 90pt;
-}
+    }
 
-.asterisk:nth-child(1) { top: 3vw; left: 50vw; }
-.asterisk:nth-child(2) { top: 5vw; left: 10vw; animation: glow 1.5s ease-in-out infinite alternate}
-.asterisk:nth-child(3) { top: 7vw; left: 40vw; }
-.asterisk:nth-child(4) { top: 10vw; left: 90vw; animation: glow 1.5s ease-in-out infinite alternate}
-.asterisk:nth-child(5) { top: 14vw; left: 50vw; }
-.asterisk:nth-child(6) { top: 17vw; left: 28vw; }
-.asterisk:nth-child(7) { top: 20vw; left: 68vw; }
-.asterisk:nth-child(8) { top: 22vw; left: 9vw; animation: glow 1.5s ease-in-out infinite alternate}
-.asterisk:nth-child(9) { top: 26vw; left: 65vw; }
-.asterisk:nth-child(10) { top: 28vw; left: 78vw; }
+    .asterisk:hover {
+        font-size: 90pt;
+    }
 
-.asterisk:nth-child(11) { top: 32vw; left: 50vw; }
-.asterisk:nth-child(12) { top: 35vw; left: 20vw; }
-.asterisk:nth-child(13) { top: 37vw; left: 40vw; }
-.asterisk:nth-child(14) { top: 42vw; left: 90vw; animation: glow 1.5s ease-in-out infinite alternate}
-.asterisk:nth-child(15) { top: 45vw; left: 50vw; }
-.asterisk:nth-child(16) { top: 46vw; left: 28vw; }
-.asterisk:nth-child(17) { top: 49vw; left: 78vw; }
-.asterisk:nth-child(18) { top: 49vw; left: 9vw; }
-.asterisk:nth-child(19) { top: 44vw; left: 65vw; }
-.asterisk:nth-child(20) { top: 8vw; left: 78vw; }
+    .asterisk:nth-child(1) {
+        top: 3vw;
+        left: 50vw;
+    }
 
-.asterisk:nth-child(21) { top: 36vw; left: 59vw; }
-.asterisk:nth-child(22) { top: 27vw; left: 28vw; }
-.asterisk:nth-child(23) { top: 29vw; left: 40vw; }
-.asterisk:nth-child(24) { top: 30vw; left: 95vw; }
-.asterisk:nth-child(25) { top: 8vw; left: 5vw; }
-.asterisk:nth-child(26) { top: 1vw; left: 25vw; }
-.asterisk:nth-child(27) { top: 0vw; left: 68vw; }
-.asterisk:nth-child(28) { top: 37vw; left: 4vw; }
-.asterisk:nth-child(29) { top: 12vw; left: 26vw; }
-.asterisk:nth-child(30) { top: 13vw; left: 64vw; }
+    .asterisk:nth-child(2) {
+        top: 5vw;
+        left: 10vw;
+        animation: glow 1.5s ease-in-out infinite alternate
+    }
 
-html {
-  scroll-behavior: smooth;
-}
+    .asterisk:nth-child(3) {
+        top: 7vw;
+        left: 40vw;
+    }
 
-section {
-			height: 100vh;
-		}
+    .asterisk:nth-child(4) {
+        top: 10vw;
+        left: 90vw;
+        animation: glow 1.5s ease-in-out infinite alternate
+    }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
+    .asterisk:nth-child(5) {
+        top: 14vw;
+        left: 50vw;
+    }
 
-th, td {
-  padding: 15px;
-    font-family: "Times Dot", Arial, sans-serif;
-    color: #c29100;
-    line-height: 125%;
-    font-size: 13pt;
-}
+    .asterisk:nth-child(6) {
+        top: 17vw;
+        left: 28vw;
+    }
 
+    .asterisk:nth-child(7) {
+        top: 20vw;
+        left: 68vw;
+    }
+
+    .asterisk:nth-child(8) {
+        top: 22vw;
+        left: 9vw;
+        animation: glow 1.5s ease-in-out infinite alternate
+    }
+
+    .asterisk:nth-child(9) {
+        top: 26vw;
+        left: 65vw;
+    }
+
+    .asterisk:nth-child(10) {
+        top: 28vw;
+        left: 78vw;
+    }
+
+    .asterisk:nth-child(11) {
+        top: 32vw;
+        left: 50vw;
+    }
+
+    .asterisk:nth-child(12) {
+        top: 35vw;
+        left: 20vw;
+    }
+
+    .asterisk:nth-child(13) {
+        top: 37vw;
+        left: 40vw;
+    }
+
+    .asterisk:nth-child(14) {
+        top: 42vw;
+        left: 90vw;
+        animation: glow 1.5s ease-in-out infinite alternate
+    }
+
+    .asterisk:nth-child(15) {
+        top: 45vw;
+        left: 50vw;
+    }
+
+    .asterisk:nth-child(16) {
+        top: 46vw;
+        left: 28vw;
+    }
+
+    .asterisk:nth-child(17) {
+        top: 49vw;
+        left: 78vw;
+    }
+
+    .asterisk:nth-child(18) {
+        top: 49vw;
+        left: 9vw;
+    }
+
+    .asterisk:nth-child(19) {
+        top: 44vw;
+        left: 65vw;
+    }
+
+    .asterisk:nth-child(20) {
+        top: 8vw;
+        left: 78vw;
+    }
+
+    .asterisk:nth-child(21) {
+        top: 36vw;
+        left: 59vw;
+    }
+
+    .asterisk:nth-child(22) {
+        top: 27vw;
+        left: 28vw;
+    }
+
+    .asterisk:nth-child(23) {
+        top: 29vw;
+        left: 40vw;
+    }
+
+    .asterisk:nth-child(24) {
+        top: 30vw;
+        left: 95vw;
+    }
+
+    .asterisk:nth-child(25) {
+        top: 8vw;
+        left: 5vw;
+    }
+
+    .asterisk:nth-child(26) {
+        top: 1vw;
+        left: 25vw;
+    }
+
+    .asterisk:nth-child(27) {
+        top: 0vw;
+        left: 68vw;
+    }
+
+    .asterisk:nth-child(28) {
+        top: 37vw;
+        left: 4vw;
+    }
+
+    .asterisk:nth-child(29) {
+        top: 12vw;
+        left: 26vw;
+    }
+
+    .asterisk:nth-child(30) {
+        top: 13vw;
+        left: 64vw;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    section {
+        height: 100vh;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 15px;
+        font-family: "Times Dot", Arial, sans-serif;
+        color: #c29100;
+        line-height: 125%;
+        font-size: 13pt;
+    }
 </style>
+
 <body>
 
     <div class="title" style="width: 60vw; height: 200px;">
@@ -196,14 +321,19 @@ th, td {
         dec 2, 2023.
         <br>
         <br>
-        <a href="https://www.newyorker.com/contributors/simon-henriques" class="peach">Simon Henriques</a> is a writer, actor, and co-artistic director of the theatre company Nightdrive.
+        <a href="https://www.newyorker.com/contributors/simon-henriques" class="peach">Simon Henriques</a> is a writer,
+        actor, and co-artistic director of the theatre company Nightdrive.
     </div>
-<br>
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="opener" style="width: 28vw">
-        Throughout history, humans have gazed upward and been cowed by the sheer vastness of the universe. With all of those stars out there, we each ask ourselves: <strong>"how could I possibly matter?"</strong> Unfortunately, the amount of light pollution in most modern cities makes this sort of humbling introspection virtually impossible today. If you’re worried about becoming too self-absorbed without a star-dappled night sky to keep your ego in check, here are some alternative ways to be reminded just how little you and your problems matter.
+        Throughout history, humans have gazed upward and been cowed by the sheer vastness of the universe. With all of
+        those stars out there, we each ask ourselves: <strong>"how could I possibly matter?"</strong> Unfortunately, the
+        amount of light pollution in most modern cities makes this sort of humbling introspection virtually impossible
+        today. If you’re worried about becoming too self-absorbed without a star-dappled night sky to keep your ego in
+        check, here are some alternative ways to be reminded just how little you and your problems matter.
     </div>
     <br>
     <br>
@@ -211,90 +341,122 @@ th, td {
 
     <table>
         <tr>
-          <td>jump to section:</td>
-          <td><a href="#section1" class="gray">1</a></td>
-          <td><a href="#section2" class="gray">2</a></td>
-          <td><a href="#section3" class="gray">3</a></td>
-          <td><a href="#section4" class="gray">4</a></td>
-          <td><a href="#section5" class="gray">5</a></td>
-          <td><a href="#section6" class="gray">6</a></td>
-          <td><a href="#section7" class="gray">7</a></td>
-          <td><a href="#section8" class="gray">8</a></td>
+            <td>jump to section:</td>
+            <td><a href="#section1" class="gray">1</a></td>
+            <td><a href="#section2" class="gray">2</a></td>
+            <td><a href="#section3" class="gray">3</a></td>
+            <td><a href="#section4" class="gray">4</a></td>
+            <td><a href="#section5" class="gray">5</a></td>
+            <td><a href="#section6" class="gray">6</a></td>
+            <td><a href="#section7" class="gray">7</a></td>
+            <td><a href="#section8" class="gray">8</a></td>
         </tr>
-      </table>
+    </table>
     <br>
     <div class="bodycopy" id="section1">
         <span class="h1">1. . . Consider the vastness of the light-pollution problem.</span>
         <br>
         <br>
-        If you need something big to make you feel small, think about the issue of light pollution itself. It’s huge—-almost as huge as the number of stars in the night sky. And you’re so insignificant that there’s basically nothing you can do to stop it. You could keep all your lights off at night, blindly fumbling your way through your pitch-dark apartment, but the stars outside would remain just as invisible as they are now. <em>Take a deep breath. You’re just one helpless person out of billions, and that’s a beautiful thing.</em>
-        
+        If you need something big to make you feel small, think about the issue of light pollution itself. It’s
+        huge—-almost as huge as the number of stars in the night sky. And you’re so insignificant that there’s basically
+        nothing you can do to stop it. You could keep all your lights off at night, blindly fumbling your way through
+        your pitch-dark apartment, but the stars outside would remain just as invisible as they are now. <em>Take a deep
+            breath. You’re just one helpless person out of billions, and that’s a beautiful thing.</em>
+
     </div>
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
     <div class="bodycopy" id="section2">
         <span class="h1">2. . . Look at all the headlights on the street.</span>
         <br>
         <br>
-        Headlights are basically stars on the ground. Watch them twinkle as they go by. Each one of those cars racing past is being driven by a person with their own story—-a story with its own unknowable drama. By the same token, all those people have no reason to care about you, or even know who you are. Wow—-it really makes you think.
-        
+        Headlights are basically stars on the ground. Watch them twinkle as they go by. Each one of those cars racing
+        past is being driven by a person with their own story—-a story with its own unknowable drama. By the same token,
+        all those people have no reason to care about you, or even know who you are. Wow—-it really makes you think.
+
     </div>
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
     <div class="bodycopy" id="section3">
         <span class="h1">3. . . Consider the vastness of the regular pollution problem.</span>
         <br>
         <br>
         Each one of those cars is pumping out exhaust, too. Dang.
-        
+
     </div>
     <br>
     <br>
     <br>
-        <div class="bodycopy" id="section4">
-            <span class="h1">4. . . Look at a picture of a starry sky.</span>
-            <br>
-            <br>
-            A photo of the night sky taken in the middle of nowhere can be a bracing reminder of what the night sky where you live could look like—-and probably used to, before industrialization and urbanization took their toll. Really let yourself experience how foreign it feels. Then, let that sense of foreignness fuel a deeper, fuller understanding of just how many places there are in the world, each with their own unique view of the cosmos. Places you’ve never heard of, places you’ll never go. Whole towns and counties and countries carrying on, unaware of and unaffected by whatever seems so important to you right now. Pretend you live there.
-        </div>
+    <div class="bodycopy" id="section4">
+        <span class="h1">4. . . Look at a picture of a starry sky.</span>
         <br>
         <br>
+        A photo of the night sky taken in the middle of nowhere can be a bracing reminder of what the night sky where
+        you live could look like—-and probably used to, before industrialization and urbanization took their toll.
+        Really let yourself experience how foreign it feels. Then, let that sense of foreignness fuel a deeper, fuller
+        understanding of just how many places there are in the world, each with their own unique view of the cosmos.
+        Places you’ve never heard of, places you’ll never go. Whole towns and counties and countries carrying on,
+        unaware of and unaffected by whatever seems so important to you right now. Pretend you live there.
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="bodycopy" id="section5">
+        <span class="h1">5. . . Look at a picture of <em><a href="https://en.wikipedia.org/wiki/The_Starry_Night"
+                    class="gray">The Starry Night</em></a> by Vincent van Gogh.</span>
         <br>
-            <div class="bodycopy" id="section5">
-                <span class="h1">5. . . Look at a picture of <em><a href= "https://en.wikipedia.org/wiki/The_Starry_Night" class="gray">The Starry Night</em></a> by Vincent van Gogh.</span>
-                <br>
-                <br>
-                With this and other works, van Gogh helped pioneer the art movement known as Post-Impressionism. You haven’t helped pioneer anything. Will anyone remember anything about you in a hundred and fifty years? Probably not. The good, the bad, the humiliating—it will all be washed away by time. Even if you cut off your ear, people probably wouldn’t care that much. That’s kind of already somebody else’s thing. So relax. Let go.
-            </div>
-            <br>
-            <br>
-            <br>
-                <div class="bodycopy" id="section6">
-                    <span class="h1">6. . . Instead of looking up at the stars, look up stars’ net worth.</span>
-                    <br>
-                    <br>
-                    Leonardo DiCaprio gets paid thirty million dollars per movie, according to the top result from your Google search just now. If your salary is a numerical representation of your worth, that means he’s thousands of times more important than you. You’re nothing. Feel a weight lift off you as you remember that the work you do doesn’t matter to anybody except your immediate supervisor. Most of your closest friends could only describe your job in the vaguest terms. That sure puts things into perspective, doesn’t it?
-                </div>
-                <br>
-            <br>
-            <br>
-                <div class="bodycopy" id="section7">
-                    <span class="h1">7. . . Consider how you thoroughly fail to understand how the Internet works.</span>
-                    <br>
-                    <br>
-                    O.K., wait. So to get that information about DiCaprio, you typed something into your computer, and then that got sent to your modem, which travelled down a wire and then went to . . . a satellite somewhere? Which beamed something back to a different computer somewhere else? Hmm. That doesn’t feel quite right. Well, however it works, the people who figured it out irrevocably altered how we communicate with one another and experience the world. Data are flying through the air all around you (?) and you’re blind to them. At any given moment, so much is happening in the World Wide Web that you don’t perceive, let alone understand. It all moves faster than you can blink, and none of it depends on you at all. It maybe depends on tubes?
-                </div>
-                <br>
-            <br>
-            <br>
-                <div class="bodycopy" id="section8">
-                    <span class="h1">8. . . Ask yourself why you’re trying so hard to feel insignificant in the first place.</span>
-                    <br>
-                    <br>
-                    In our data-driven, capitalist society, you basically only exist in aggregate form. As far as a good chunk of the world is concerned, you’re no more than a faceless combination of demographics whose primary purpose is to be advertised to. We’re all just cogs in a giant machine that even the richest and most powerful barely understand the true impact of. So if you’ve found something that feels like it matters—-that gives your life a sense of meaning—-why would you want to get rid of that? A steady stream of overstimulation has insured that we’re numb to just about everything we encounter, so the fact that you’re able to feel anything with any degree of intensity is a small miracle. Look up at the blank night sky. Indulge yourself. Revel in this feeling of importance, for the brief moment it’s here. It’ll probably pass by morning.
-                </div>
+        <br>
+        With this and other works, van Gogh helped pioneer the art movement known as Post-Impressionism. You haven’t
+        helped pioneer anything. Will anyone remember anything about you in a hundred and fifty years? Probably not. The
+        good, the bad, the humiliating—it will all be washed away by time. Even if you cut off your ear, people probably
+        wouldn’t care that much. That’s kind of already somebody else’s thing. So relax. Let go.
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="bodycopy" id="section6">
+        <span class="h1">6. . . Instead of looking up at the stars, look up stars’ net worth.</span>
+        <br>
+        <br>
+        Leonardo DiCaprio gets paid thirty million dollars per movie, according to the top result from your Google
+        search just now. If your salary is a numerical representation of your worth, that means he’s thousands of times
+        more important than you. You’re nothing. Feel a weight lift off you as you remember that the work you do doesn’t
+        matter to anybody except your immediate supervisor. Most of your closest friends could only describe your job in
+        the vaguest terms. That sure puts things into perspective, doesn’t it?
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="bodycopy" id="section7">
+        <span class="h1">7. . . Consider how you thoroughly fail to understand how the Internet works.</span>
+        <br>
+        <br>
+        O.K., wait. So to get that information about DiCaprio, you typed something into your computer, and then that got
+        sent to your modem, which travelled down a wire and then went to . . . a satellite somewhere? Which beamed
+        something back to a different computer somewhere else? Hmm. That doesn’t feel quite right. Well, however it
+        works, the people who figured it out irrevocably altered how we communicate with one another and experience the
+        world. Data are flying through the air all around you (?) and you’re blind to them. At any given moment, so much
+        is happening in the World Wide Web that you don’t perceive, let alone understand. It all moves faster than you
+        can blink, and none of it depends on you at all. It maybe depends on tubes?
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="bodycopy" id="section8">
+        <span class="h1">8. . . Ask yourself why you’re trying so hard to feel insignificant in the first place.</span>
+        <br>
+        <br>
+        In our data-driven, capitalist society, you basically only exist in aggregate form. As far as a good chunk of
+        the world is concerned, you’re no more than a faceless combination of demographics whose primary purpose is to
+        be advertised to. We’re all just cogs in a giant machine that even the richest and most powerful barely
+        understand the true impact of. So if you’ve found something that feels like it matters—-that gives your life a
+        sense of meaning—-why would you want to get rid of that? A steady stream of overstimulation has insured that
+        we’re numb to just about everything we encounter, so the fact that you’re able to feel anything with any degree
+        of intensity is a small miracle. Look up at the blank night sky. Indulge yourself. Revel in this feeling of
+        importance, for the brief moment it’s here. It’ll probably pass by morning.
+    </div>
 
     <div>
         <div class="asterisk">*</div>
@@ -330,14 +492,15 @@ th, td {
         <div class="asterisk">*</div>
         <div class="asterisk">*</div>
     </div>
-<br>
-<br>
-<br>
-<div class="closer">
-<a href="../" class="gray">return home</a></span>
-</div>
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
+    <div class="closer">
+        <a href="../" class="gray">return home</a></span>
+    </div>
+    <br>
+    <br>
+    <br>
 </body>
+
 </html>
