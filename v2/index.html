@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seeing Stars [HTML + CSS]</title>
+
 </head>
 
 <style>
@@ -13,34 +14,72 @@
     box-sizing: border-box;
  }
 
-body {
-    background: linear-gradient(#000000, #c29100);
+.url {
+    cursor: url(v2/images/star-cursor.png),auto;
 }
 
+ body {
+    background: linear-gradient(#000000, #c29100);
+    cursor: url('v2/images/star-cursor.png'), auto;
+ }
+
+@font-face {
+	font-family: "Sparkling";
+	src: url("/v2/fonts/Sparkling-D0Rd.ttf");
+    }
+
+    .title {
+        color: #ffffff;
+	    font-family: "Sparkling", Arial, sans-serif;
+        font-size: 40pt;
+        text-align: left;
+        animation: glow 1.5s ease-in-out infinite alternate;
+    }
+
+    .headerinfo {
+        color: #ffffff;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 12pt;
+        text-align: left;
+        padding-left: 40px;
+    }
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #c29100, 0 0 40px #c29100, 0 0 50px #c29100, 0 0 60px #c29100, 0 0 70px #c29100;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #000000, 0 0 60px #000000, 0 0 70px #000000, 0 0 80px #000000;
+  }
+}
+
+@font-face {
+	font-family: "Times Dot";
+	src: url("/v2/fonts/TimesDotRom.otf");
+    }
+
+    .bodycopy {
+        color: #ffffff;
+	    font-family: "Times Dot", Arial, sans-serif;
+
+    }
+
 .asterisk {
-    position: absolute;
+    position: fixed;
     font-family: Arial, sans-serif;
     font-size: 60pt;
     color: #c29100;
     opacity: 0.5;
-    z-index: -1;
+    transition: 0.1s;
 
 }
 
-.bodycopy1 {
-    color: #ffffff;
-	font-family: "Sparkling", Arial, sans-serif;
-
-    @font-face {
-			font-family: "Sparkling";
-			src: url("https://www.fontspace.com/sparkling-font-f6030");
-        }
+.asterisk:hover {
+    font-size: 90pt;
+}
 
 
-    }
 
-
-/* Random positioning of asterisks */
 .asterisk:nth-child(1) { top: 3vw; left: 50vw; }
 .asterisk:nth-child(2) { top: 5vw; left: 10vw; }
 .asterisk:nth-child(3) { top: 7vw; left: 40vw; }
@@ -58,34 +97,51 @@ body {
 .asterisk:nth-child(14) { top: 42vw; left: 90vw; }
 .asterisk:nth-child(15) { top: 45vw; left: 50vw; }
 .asterisk:nth-child(16) { top: 46vw; left: 28vw; }
-.asterisk:nth-child(17) { top: 49vw; left: 68vw; }
-.asterisk:nth-child(18) { top: 51vw; left: 9vw; }
-.asterisk:nth-child(19) { top: 54vw; left: 65vw; }
-.asterisk:nth-child(20) { top: 56vw; left: 78vw; }
+.asterisk:nth-child(17) { top: 49vw; left: 78vw; }
+.asterisk:nth-child(18) { top: 49vw; left: 9vw; }
+.asterisk:nth-child(19) { top: 44vw; left: 65vw; }
+.asterisk:nth-child(20) { top: 8vw; left: 78vw; }
 
-.asterisk:nth-child(21) { top: 58vw; left: 50vw; }
-.asterisk:nth-child(22) { top: 60vw; left: 20vw; }
-.asterisk:nth-child(23) { top: 61vw; left: 40vw; }
-.asterisk:nth-child(24) { top: 65vw; left: 90vw; }
-.asterisk:nth-child(25) { top: 67vw; left: 50vw; }
-.asterisk:nth-child(26) { top: 70vw; left: 28vw; }
-.asterisk:nth-child(27) { top: 74vw; left: 68vw; }
-.asterisk:nth-child(28) { top: 76vw; left: 9vw; }
-.asterisk:nth-child(29) { top: 79vw; left: 65vw; }
-.asterisk:nth-child(30) { top: 83vw; left: 78vw; }
+.asterisk:nth-child(21) { top: 36vw; left: 59vw; }
+.asterisk:nth-child(22) { top: 27vw; left: 28vw; }
+.asterisk:nth-child(23) { top: 29vw; left: 40vw; }
+.asterisk:nth-child(24) { top: 30vw; left: 95vw; }
+.asterisk:nth-child(25) { top: 8vw; left: 5vw; }
+.asterisk:nth-child(26) { top: 1vw; left: 25vw; }
+.asterisk:nth-child(27) { top: 0vw; left: 68vw; }
+.asterisk:nth-child(28) { top: 37vw; left: 4vw; }
+.asterisk:nth-child(29) { top: 12vw; left: 26vw; }
+.asterisk:nth-child(30) { top: 13vw; left: 64vw; }
    
+table {
+  font-family: Courier New, monospace;
+  border-collapse: collapse;
+}
+
 </style>
 <body>
 
-    <div class="bodycopy1">
-        hello world
-        <br>
-        world hello hello
-        <br>
-        hello hello hello hello
-    </div>
+    <table style="width: 100%">
+        <tr style="height: 400px">
+          <td class="headerinfo" style="width: 25%,">
+            <strong>daily shouts</strong>
+            <br>
+            By Simon Henriques
+            <br>
+            dec 2, 2023.
+            <br>
+            <br>
+            <a href="https://www.newyorker.com/contributors/simon-henriques">Simon Henriques</a> is a writer, actor, and co-artistic director of the theatre company Nightdrive.
+            </td>
+          <th class="title" style="width: 60%; height: 200px;">
+            How to Still Be Reminded of Your Insignificance Even When Light Pollution Makes It Impossible to See the Stars
+            </th>
+        </tr>
+      </table>
+    
 
-    <div class="background">
+
+    <div>
         <div class="asterisk">*</div>
         <div class="asterisk">*</div>
         <div class="asterisk">*</div>
