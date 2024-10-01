@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seeing Stars [HTML + CSS + Flexbox]</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: "Sparkling";
+        src: url("fonts/Sparkling-D0Rd.ttf");
+    }
+
+    .title {
+        color: #c29100;
+        font-family: "Sparkling", Arial, sans-serif;
+        text-align: left;
+        animation: glow 1.5s ease-in-out infinite alternate;
+        text-transform: uppercase;
+        line-height: 125%;
+    }
+
+.headergrid {
+  margin: 10vw 50px 0 0;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  column-gap: 50px;
+}
+
+.headergrid > div {
+  text-align: left;
+  font-size: 60vw;
+  line-height: 0.5em;
+}
+
+
+.body-flexbox {
+    display: flex; 
+    flex-wrap: nowrap;
+            grid: 1fr 1fr 1fr;
+            background-color: white; 
+            padding: 10px 50px 10px 50px;
+}
+
+.body-flexbox > div {
+    background-color: white; 
+            text-align: left; 
+            font-size: 30px; 
+}
+
+
+.footergrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  line-height: 0em;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.footergrid > div {
+  text-align: center;
+  font-size: 65vw;
+  font-weight: bold;
+}
+
+.footergrid:hover {
+  text-shadow: 0 0 10px #5b4400, 0 0 30px #e5ac00;
+}
+
+@keyframes glow {
+        from {
+            text-shadow: 0 0 0px #c29100;
+        }
+
+        to {
+            text-shadow: 0 0 10px #765900, 0 0 30px #c29100;
+        }
+    }
+
+</style>
+
+
+<body>
+
+    <div class="headergrid">
+        <div>*</div>
+        <div> </div>
+        <div>*</div>
+        <div class="title" style="line-height: normal; font-size: 37pt;"> How to Still Be Reminded of Your Insignificance Even When Light Pollution Makes It Impossible to See the Stars</div>
+      </div>
+
+      <br><br><br><br><br><br><br>
+
+      <div class="body-flexbox">
+        <div class="body-flexbox">*</div>
+        <div class="body-flexbox">Consider the vastness of the light-pollution problem.</div>
+        <div class="body-flexbox">If you need something big to make you feel small, think about the issue of light pollution itself.</div>
+    </div>
+
+    <div class="body-flexbox">
+        <div class="body-flexbox">It’s huge—almost as huge as the number of stars in the night sky. And you’re so insignificant that there’s basically nothing you can do to stop it.</div>
+        <div class="body-flexbox">*</div>
+        <div class="body-flexbox">*</div>
+    </div>
+
+<div class="body-flexbox">
+    <div class="body-flexbox">You could keep all your lights off at night, blindly fumbling your way through your pitch-dark apartment, but the stars outside would remain just as invisible as they are now.</div>
+    <div class="body-flexbox">Take a deep breath.</div>
+    <div class="body-flexbox">You’re just one helpless person out of billions, and that’s a beautiful thing.</div>
+    <div class="body-flexbox">*</div>
+</div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="footergrid">
+        <div>*</div>
+        <div>*</div>
+        <div>*</div>
+      </div>
+
+</body>
+</html>
