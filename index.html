@@ -3,18 +3,93 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Type + Code Project 1</title>
+	<title>* Landing *</title>
 </head>
+
+<style>
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	cursor: url(images/star-cursor.png), crosshair;
+}
+
+body {
+	background: linear-gradient(#000000, #a07800);
+	margin: 100px;
+}
+
+@font-face {
+        font-family: "Sparkling";
+        src: url("v3/fonts/Sparkling-D0Rd.ttf");
+    }
+
+@font-face {
+        font-family: "Times Dot";
+        src: url("v3/fonts/TimesDotRom.otf");
+    }
+
+    h1 {
+        color: #c29100;
+        font-family: "Sparkling", Arial, sans-serif;
+        font-size: 37pt;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+	h2 {
+		font-size: 12pt;
+		font-family: 'Courier New', Courier, monospace;
+		font-weight: normal;
+		text-align: center;
+		color: rgb(130, 130, 130);
+	}
+
+	p {
+		font-size: 50px;
+		text-align: left;
+		font-family: "Times Dot", serif;
+	}
+
+	a {
+		text-decoration: none;
+		color: #000000;
+	}
+
+	a:hover {
+		text-shadow: 0 0 10px #c29100, 0 0 40px #725600;
+	}
+
+.bodygrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+</style>
+
 <body>
 	
 	<h1>Type + Code Project 1</h1>
+	<br>
 	<h2>Natalie Ho</h2>
-
-	<ul>
-		<li><a href="https://www.newyorker.com/humor/daily-shouts/how-to-still-be-reminded-of-your-insignificance-even-when-light-pollution-makes-it-impossible-to-see-the-stars">How to Still be Reminded of Your Insignificance Even When Light Pollution Makes it Impossible to See The Stars</a></li>
-		<li><a href="v1/">* Seeing Stars * [HTML ONLY]</a></li>
-		<li><a href="v2/">Seeing Stars 2 [HTML + CSS]</a></li>
-		<li><a href="v3/">Version 3</a></li>
-	</ul>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="bodygrid">
+		<p style="grid-row: span 3"><a href="https://www.newyorker.com/humor/daily-shouts/how-to-still-be-reminded-of-your-insignificance-even-when-light-pollution-makes-it-impossible-to-see-the-stars">How to Still be Reminded of Your Insignificance Even When Light Pollution Makes it Impossible to See The Stars</a></p>
+		<p><a href="v1/">[HTML ONLY]</a></p>
+		<p><a href="v2/">[HTML + CSS]</a></p>
+		<p><a href="v3/">[Flexbox + Grids]</a></p>
+	  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </body>
 </html>

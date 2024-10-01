@@ -11,77 +11,198 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        cursor: url(images/star-cursor1.png), crosshair;
     }
 
-    @font-face {
+body {
+    background-color: #0f0b00;
+    transition: .5s;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+@media (min-width: 1350px) {
+    body {
+        background-color: black;
+    }
+}
+
+@media (max-width: 1349px) and (min-width: 1200px) {
+    body {
+        background-color: #322500;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 1050px) {
+    body {
+        background-color: #382a00;
+    }
+}
+
+@media (max-width: 1049px) and (min-width: 900px) {
+    body {
+        background-color: #463400;
+    }
+}
+
+@media (max-width: 899px) and (min-width: 750px) {
+    body {
+        background-color: #856400;
+    }
+}
+
+@media (max-width: 749px) and (min-width: 600px) {
+    body {
+        background-color: #a57c00;
+    }
+}
+
+@media (max-width: 599px) {
+    body {
+        background-color: #c29100;
+    }
+}
+
+.headergrid {
+    display: flex; 
+    flex-wrap: nowrap;
+    grid: 1fr 1fr;
+}
+
+.headerasterisk {
+    font-size: 100vw;
+    margin-left: -250px;
+    margin-top: 30vw;
+    line-height: 0.2em;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@font-face {
         font-family: "Sparkling";
         src: url("fonts/Sparkling-D0Rd.ttf");
     }
 
-    .title {
-        color: #c29100;
-        font-family: "Sparkling", Arial, sans-serif;
-        text-align: left;
-        animation: glow 1.5s ease-in-out infinite alternate;
+h1 {
+        margin-top: 30vw;
+        margin-right: 100px;
+        font-family: "Sparkling", Arial, sans-serif;  
+        font-size: 40px;      
         text-transform: uppercase;
         line-height: 125%;
+        animation: glow 2s ease-in-out infinite alternate;
     }
 
-.headergrid {
-  margin: 10vw 50px 0 0;
-  display: grid;
-  grid-template-columns: 30% 1fr;
-  column-gap: 50px;
+@font-face {
+        font-family: "Times Dot";
+        src: url("fonts/TimesDotRom.otf");
+    }
+
+.allcontainer {
+    display: grid;
+    row-gap: 100px;
+    grid-template-columns: 1fr 20%;
+    margin-left: 11%;
+    margin-right: 11%;
 }
 
-.headergrid > div {
-  text-align: left;
-  font-size: 60vw;
-  line-height: 0.5em;
+.navbar {
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-rows: 10% 6% 6% 6% 6% 6% 6% 6% 6%;
+    text-shadow: 0 0 5px #c29100, 0 0 10px #725600;
+    text-decoration: none;
+    grid-row: span 12;
 }
 
+.peach {
+        color: #000000;
+        text-decoration: none;
+        text-align: right;
+        text-shadow: 0 0 5px #c29100, 0 0 10px #725600
+    }
 
-.body-flexbox {
+
+    .peach:hover {
+        text-decoration: none;
+        animation: glow 1.5s ease-in-out infinite alternate
+    }
+
+.bodyflexbox {
     display: flex; 
     flex-wrap: nowrap;
-            grid: 1fr 1fr 1fr;
-            background-color: white; 
-            padding: 10px 50px 10px 50px;
+    grid: 1fr 1fr 1fr;
+    padding-top: 10px;
 }
 
-.body-flexbox > div {
-    background-color: white; 
-            text-align: left; 
-            font-size: 30px; 
+@media (max-width: 1230px) {
+    .bodyflexbox {
+		flex-wrap: wrap;
+			}
+		}
+        
+h2 {
+    text-align: left; 
+    font-size: 45px; 
+    font-weight: bold;
+    font-family: "Times Dot", serif;
+    padding: 10px 50px 10px 50px;
+    transition: .5s;
 }
 
+h2:hover {
+    text-shadow: 0 0 3px #000000, 0 0 30px #9a7400;
+}
+
+.bodyasterisk {
+    text-align: center; 
+    font-size: 60px; 
+    font-weight: bold;
+    font-family: "Times Dot", serif;
+    padding: 30px 50px 5px 50px;
+    line-height: 0.5em;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+p {
+        text-align: left; 
+        font-size: 30px; 
+        font-family: "Times Dot", serif;
+        font-size: 28px;
+        padding: 5px 25px 5px 25px;
+        transition: 2s;
+}
+
+p:hover {
+    text-shadow: 0 0 5px #c29100, 0 0 10px #725600;
+    transition: .1s;
+}
 
 .footergrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   line-height: 0em;
-  animation: glow 1s ease-in-out infinite alternate;
+  margin-left: -42px;
 }
 
 .footergrid > div {
   text-align: center;
   font-size: 65vw;
   font-weight: bold;
-}
-
-.footergrid:hover {
-  text-shadow: 0 0 10px #5b4400, 0 0 30px #e5ac00;
+  animation: glow 2s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
         from {
-            text-shadow: 0 0 0px #c29100;
+            text-shadow: 0 0 0px #000000;
         }
 
         to {
-            text-shadow: 0 0 10px #765900, 0 0 30px #c29100;
+            text-shadow: 0 0 5px #c29100, 0 0 10px #725600;
         }
-    }
+}
 
 </style>
 
@@ -89,35 +210,274 @@
 <body>
 
     <div class="headergrid">
-        <div>*</div>
-        <div> </div>
-        <div>*</div>
-        <div class="title" style="line-height: normal; font-size: 37pt;"> How to Still Be Reminded of Your Insignificance Even When Light Pollution Makes It Impossible to See the Stars</div>
+        <div class="headerasterisk">*</div>
+        <h1>How to Still Be Reminded of Your Insignificance Even When Light Pollution Makes It Impossible to See the Stars
+        </h1>
       </div>
 
-      <br><br><br><br><br><br><br>
+<br><br><br><br>
 
-      <div class="body-flexbox">
-        <div class="body-flexbox">*</div>
-        <div class="body-flexbox">Consider the vastness of the light-pollution problem.</div>
-        <div class="body-flexbox">If you need something big to make you feel small, think about the issue of light pollution itself.</div>
+<div class="allcontainer">
+
+    <div style="border-left: 2px solid #c292005f">
+        <div class="bodyflexbox">
+            <p>By Simon Henriques</p>
+            <p>Throughout history, humans have gazed upward and been cowed by the sheer vastness of the universe. With all of those stars out there, we each ask ourselves, How could I possibly matter? Unfortunately, the amount of light pollution in most modern cities makes this sort of humbling introspection virtually impossible today. If you’re worried about becoming too self-absorbed without a star-dappled night sky to keep your ego in check, here are some alternative ways to be reminded just how little you and your problems matter.
+            </p>
+        </div>
+
+        <div class="bodyflexbox">
+            <p>Simon Henriques is a writer, actor, and co-artistic director of the theatre company Nightdrive.</p>
+        </div>
     </div>
 
-    <div class="body-flexbox">
-        <div class="body-flexbox">It’s huge—almost as huge as the number of stars in the night sky. And you’re so insignificant that there’s basically nothing you can do to stop it.</div>
-        <div class="body-flexbox">*</div>
-        <div class="body-flexbox">*</div>
+    <div class="navbar">
+        <p class="peach">jump to</p>
+        <p class="peach"><a href="#section1" class="peach">1</a></p>
+        <p class="peach"><a href="#section2" class="peach">2</a></p>
+        <p class="peach"><a href="#section3" class="peach">3</a></p>  
+        <p class="peach"><a href="#section4" class="peach">4</a></p>
+        <p class="peach"><a href="#section5" class="peach">5</a></p>
+        <p class="peach"><a href="#section6" class="peach">6</a></p>  
+        <p class="peach"><a href="#section7" class="peach">7</a></p>
+        <p class="peach"><a href="#section8" class="peach">8</a></p> 
+        <p class="peach" style="font-size: 40vw;">*</p>
+        <p class="peach" style="font-size: 40vw;">*</p>
+        <p class="peach" style="font-size: 40vw;">*</p>
+        <p class="peach" style="font-size: 40vw;">*</p>
     </div>
 
-<div class="body-flexbox">
-    <div class="body-flexbox">You could keep all your lights off at night, blindly fumbling your way through your pitch-dark apartment, but the stars outside would remain just as invisible as they are now.</div>
-    <div class="body-flexbox">Take a deep breath.</div>
-    <div class="body-flexbox">You’re just one helpless person out of billions, and that’s a beautiful thing.</div>
-    <div class="body-flexbox">*</div>
+    <div id="section1"></div>
+        <div class="bodyflexbox">
+            <div class="peach" style="font-size: 40px">1</div>
+            <h2>Consider the vastness of the light-pollution problem.</h2>
+            <p>If you need something big to make you feel small, think about the issue of light pollution itself.</p>
+        </div>
+
+        <div class="bodyflexbox">
+            <p>It’s huge—almost as huge as the number of stars in the night sky. And you’re so insignificant that there’s basically nothing you can do to stop it.</p>
+            <div class="bodyasterisk">*</div>
+            <div class="bodyasterisk">*</div>
+        </div>
+
+        <div class="bodyflexbox">
+            <p>You could keep all your lights off at night, blindly fumbling your way through your pitch-dark apartment, but the stars outside would remain just as invisible as they are now.</p>
+            <div class="bodyasterisk">*</div>
+            <p>Take a deep breath.</p>
+            <p>You’re just one helpless person out of billions, and that’s a beautiful thing.</p>
+        </div>
+
+    <div id="section2">
+        <div class="bodyflexbox">
+            <div class="peach" style="font-size: 40px">2</div>
+            <h2>Look at all the headlights on the street.</h2>
+            <div class="bodyasterisk">*</div>
+            <p>Headlights are basically stars on the ground.</p>
+        </div>
+
+        <div class="bodyflexbox">
+            <p>Watch them twinkle as they go by.</p>
+            <p>Each one of those cars racing past is being driven by a person with their own story—a story with its own unknowable drama.</p>
+            <div class="bodyasterisk">*</div>
+        </div>
+
+        <div class="bodyflexbox">
+            <div class="bodyasterisk">*</div>
+            <p>By the same token, all those people have no reason to care about you, or even know who you are.</p>
+            <div class="bodyasterisk">*</div>
+            <p>Wow—it really makes you think.</p>
+        </div>
+
+    </div>
+
+    <div id="section3">
+        <div class="bodyflexbox">
+            <div class="peach" style="font-size: 40px">3</div>
+            <div class="bodyasterisk">*</div>
+            <h2>Consider the vastness of the regular pollution problem.</h2>
+        </div>
+
+        <div class="bodyflexbox">
+            <p>Each one of those cars is pumping out exhaust, too.</p>
+            <div class="bodyasterisk">*</div>
+            <p>Dang.</p>
+        </div>
+    </div>
+
+    <div id="section4">
+        <div class="bodyflexbox">
+            <div class="peach" style="font-size: 40px">4</div>
+            <h2>Look at a picture of a starry sky.</h2>
+            <div class="bodyasterisk">*</div>
+            <div class="bodyasterisk">*</div>
+            <p>A photo of the night sky taken in the middle of nowhere can be a bracing reminder of what the night sky where you live could look like—and probably used to, before industrialization and urbanization took their toll.</p>
+        </div>
+
+        <div class="bodyflexbox">
+            <div class="bodyasterisk">*</div>
+            <p>Really let yourself experience how foreign it feels.</p>
+            <p>Then, let that sense of foreignness fuel a deeper, fuller understanding of just how many places there are in the world, each with their own unique view of the cosmos.</p>
+        </div>
+
+        <div class="bodyflexbox">
+            <p>Places you’ve never heard of, places you’ll never go.</p>
+            <p>Whole towns and counties and countries carrying on, unaware of and unaffected by whatever seems so important to you right now.</p>
+            <div class="bodyasterisk">*</div>
+            <p>Pretend you live there.</p>
+        </div>
+    </div>
+
+    <div id="section5">
+        <div class="bodyflexbox">
+            <div class="peach" style="font-size: 40px">5</div>
+            <div class="bodyasterisk">*</div>
+            <h2>Look at a picture of <em>The Starry Night</em> by Vincent van Gogh.</h2>
+            <p>With this and other works, van Gogh helped pioneer the art movement known as Post-Impressionism.</p>
+        </div>
+
+        <div class="bodyflexbox">
+            <p>You haven’t helped pioneer anything.</p>
+            <div class="bodyasterisk">*</div>
+            <p>Will anyone remember anything about you in a hundred and fifty years?</p>
+            <div class="bodyasterisk">*</div>
+        </div>
+
+        <div class="bodyflexbox">
+            <div class="bodyasterisk">*</div>
+            <p>Probably not.</p>
+            <div class="bodyasterisk">*</div>
+            <p>The good, the bad, the humiliating—it will all be washed away by time.</p>
+            <p>Even if you cut off your ear, people probably wouldn’t care that much.</p>
+        </div>
+
+        <div class="bodyflexbox">
+            <p>That’s kind of already somebody else’s thing.</p>
+            <div class="bodyasterisk">*</div>
+            <p>So relax.</p>
+            <p>Let go.</p>
+        </div>
+
+    </div>
+
+    <div id="section6">
+        <div class="bodyflexbox">
+            <div class="peach" style="font-size: 40px">6</div>
+            <h2>Instead of looking up at the stars, look up stars’ net worth.</h2>
+            <div class="bodyasterisk">*</div>
+        </div>
+
+        <div class="bodyflexbox">
+            <div class="bodyasterisk">*</div>
+            <p>Leonardo DiCaprio gets paid thirty million dollars per movie, according to the top result from your Google search just now.</p>
+        </div>
+
+        <div class="bodyflexbox">
+            <p>If your salary is a numerical representation of your worth, that means he’s thousands of times more important than you.</p>
+            <div class="bodyasterisk">*</div>
+            <p>You’re nothing.</p>
+            <p>Feel a weight lift off you as you remember that the work you do doesn’t matter to anybody except your immediate supervisor.</p>
+        </div>
+
+        <div class="bodyflexbox">
+        <div class="bodyasterisk">*</div>
+        <p>Most of your closest friends could only describe your job in the vaguest terms.</p>
+        </div>
+
+        <div class="bodyflexbox">
+            <p>That sure puts things into perspective, doesn’t it?</p>
+            <div class="bodyasterisk">*</div>
+            </div>
+    </div>
+
+    <div id="section7">
+        <div class="bodyflexbox">
+            <div class="peach" style="font-size: 40px">7</div>
+            <h2>Consider how you thoroughly fail to understand how the Internet works.</h2>
+            <p>O.K., wait.</p>
+            <p>So to get that information about DiCaprio, you typed something into your computer, and then that got sent to your modem, which travelled down a wire and then went to . . . a satellite somewhere?</p>
+        </div>
+
+        <div class="bodyflexbox">
+            <div class="bodyasterisk">*</div>
+            <p>Which beamed something back to a different computer somewhere else?</p>
+            <p>Hmm.</p>
+            <p>That doesn’t feel quite right.</p>
+        </div>
+
+        <div class="bodyflexbox">
+            <p>Well, however it works, the people who figured it out irrevocably altered how we communicate with one another and experience the world.</p>
+            <div class="bodyasterisk">*</div>
+        </div>
+
+        <div class="bodyflexbox">
+            <p>Data are flying through the air all around you (?) and you’re blind to them.</p>
+        </div>
+
+        <div class="bodyflexbox">
+        <p>At any given moment, so much is happening in the World Wide Web that you don’t perceive, let alone understand.</p>
+        <div class="bodyasterisk">*</div>
+        <p>It all moves faster than you can blink, and none of it depends on you at all.</p>
+        </div>
+
+        <div class="bodyflexbox">
+            <div class="bodyasterisk">*</div>
+            <p>It maybe depends on tubes?</p>
+            </div>
+    </div>
+
+    <div id="section8">
+        <div class="bodyflexbox">
+            <div class="peach" style="font-size: 40px">8</div>
+            <h2>Ask yourself why you’re trying so hard to feel insignificant in the first place.</h2>
+            <p>In our data-driven, capitalist society, you basically only exist in aggregate form.</p>
+            <p>As far as a good chunk of the world is concerned, you’re no more than a faceless combination of demographics whose primary purpose is to be advertised to.</p>
+        </div>
+
+        <div class="bodyflexbox">
+            <p>As far as a good chunk of the world is concerned, you’re no more than a faceless combination of demographics whose primary purpose is to be advertised to.</p>
+            <p>We’re all just cogs in a giant machine that even the richest and most powerful barely understand the true impact of.</p>
+        </div>
+
+        <div class="bodyflexbox">
+        <div class="bodyasterisk">*</div>
+        <p>So if you’ve found something that feels like it matters—that gives your life a sense of meaning—why would you want to get rid of that?</p>
+        </div>
+    </div>
+
+    <div style="border-left: 2px solid #c292005f">
+        <div class="bodyflexbox">
+            <p>A steady stream of overstimulation has insured that we’re numb to just about everything we encounter, so the fact that you’re able to feel anything with any degree of intensity is a small miracle. Look up at the blank night sky. Indulge yourself. Revel in this feeling of importance, for the brief moment it’s here. It’ll probably pass by morning.</p>
+            <p class="peach"><a href="../" class="peach">return home</a></p>
+        </div>
+    </div>
 </div>
 
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="footergrid">
         <div>*</div>
         <div>*</div>
